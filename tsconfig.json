@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "rootDir": ".",
+        "outDir": ".",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "strict": true,
+        "target": "esnext",
+        "module": "esnext",    
+        "skipLibCheck": true,
+        "noEmit": true,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "incremental": true,
+        "moduleResolution": "NodeNext",
+        "types": [
+            "vitest/importMeta"
+        ]
+    },
+    "include": [
+        "75"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
