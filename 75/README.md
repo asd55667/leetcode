@@ -7,3 +7,4 @@ Ace Coding Interview with 75 Qs
 2. 1071.gcdOfStrings
 3. 1431.kidsWithCandies
 4. 605.canPlaceFlowers
+5. 345.reverseVowels
