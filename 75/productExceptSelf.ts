@@ -20,7 +20,7 @@ export default function productExceptSelf(nums: number[]): number[] {
 
 if (import.meta.vitest) {
     const { it, expect } = import.meta.vitest
-    it('', () => {
+    it('productExceptSelf', () => {
         const example1 = [1, 2, 3, 4]
         const example2 = [-1, 1, 0, -3, 3]
         const answer1 = [24, 12, 8, 6]
