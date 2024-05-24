@@ -62,43 +62,28 @@ export default function increasingTriplet(nums: number[]): boolean {
     return false
 };
 
-if (import.meta.vitest) {
-    const { it, expect } = import.meta.vitest
-    it('increasingTriplet', () => {
-        const example1 = [1, 2, 3, 4, 5]
-        const example2 = [5, 4, 3, 2, 1]
-        const example3 = [2, 1, 5, 0, 4, 6]
-        const example4 = [1, 5, 0, 4, 1, 3]
-        const example5 = [0, 4, 2, 1, 0, -1, -3]
-        const example6 = [20, 100, 10, 12, 5, 13]
-        const example7 = [1, 1, 1, 1, 1, 1, 3, 7]
-        const example8 = [1, 1, 1, 1, 1, 1, 1]
-        const example9 = [6, 7, 1, 2]
-        const example10 = [1, 2, 1, 2, 1, 2, 1, 2]
-        const example11 = [20, 21, 18, 19, 5, 6, 7]
+import.meta.vitest
 
-        const answer1 = true
-        const answer2 = false
-        const answer3 = true
-        const answer4 = true
-        const answer5 = false
-        const answer6 = true
-        const answer7 = true
-        const answer8 = false
-        const answer9 = false
-        const answer10 = false
-        const answer11 = true
+const example1 = [1, 2, 3, 4, 5]
+const example2 = [5, 4, 3, 2, 1]
+const example3 = [2, 1, 5, 0, 4, 6]
+const example4 = [1, 5, 0, 4, 1, 3]
+const example5 = [0, 4, 2, 1, 0, -1, -3]
+const example6 = [20, 100, 10, 12, 5, 13]
+const example7 = [1, 1, 1, 1, 1, 1, 3, 7]
+const example8 = [1, 1, 1, 1, 1, 1, 1]
+const example9 = [6, 7, 1, 2]
+const example10 = [1, 2, 1, 2, 1, 2, 1, 2]
+const example11 = [20, 21, 18, 19, 5, 6, 7]
 
-        expect(increasingTriplet(example1)).toStrictEqual(answer1)
-        expect(increasingTriplet(example2)).toStrictEqual(answer2)
-        expect(increasingTriplet(example3)).toStrictEqual(answer3)
-        expect(increasingTriplet(example4)).toStrictEqual(answer4)
-        expect(increasingTriplet(example5)).toStrictEqual(answer5)
-        expect(increasingTriplet(example6)).toStrictEqual(answer6)
-        expect(increasingTriplet(example7)).toStrictEqual(answer7)
-        expect(increasingTriplet(example8)).toStrictEqual(answer8)
-        expect(increasingTriplet(example9)).toStrictEqual(answer9)
-        expect(increasingTriplet(example10)).toStrictEqual(answer10)
-        expect(increasingTriplet(example11)).toStrictEqual(answer11)
-    })
-}
+const answer1 = true
+const answer2 = false
+const answer3 = true
+const answer4 = true
+const answer5 = false
+const answer6 = true
+const answer7 = true
+const answer8 = false
+const answer9 = false
+const answer10 = false
+const answer11 = true

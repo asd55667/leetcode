@@ -18,18 +18,12 @@ export default function reverseVowels(s: string): string {
     return array.join('')
 };
 
-if (import.meta.vitest) {
-    const { it, expect } = import.meta.vitest
+import.meta.vitest
 
-    const example1 = 'hello'
-    const example2 = 'leetcode'
-    const example3 = 'aA'
+const example1 = 'hello'
+const example2 = 'leetcode'
+const example3 = 'aA'
 
-    const answer = ['holle', 'leotcede', 'Aa']
-
-    it('reverseVowels', () => {
-        expect(reverseVowels(example1)).toBe(answer[0])
-        expect(reverseVowels(example2)).toBe(answer[1])
-        expect(reverseVowels(example3)).toBe(answer[2])
-    })
-}
+const answer1 = 'holle'
+const answer2 = 'leotcede'
+const answer3 = 'Aa'

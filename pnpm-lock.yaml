@@ -8,6 +8,9 @@ devDependencies:
   '@types/node':
     specifier: ^20.11.19
     version: 20.12.12
+  acorn:
+    specifier: ^8.11.3
+    version: 8.11.3
   typescript:
     specifier: ^5.4.5
     version: 5.4.5

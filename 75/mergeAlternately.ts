@@ -13,18 +13,12 @@ export default function mergeAlternately(word1: string, word2: string) {
     return word
 };
 
-if (import.meta.vitest) {
-    const { it, expect } = import.meta.vitest
+import.meta.vitest
 
-    const example1: [string, string] = ["abc", "pqr"]
-    const example2: [string, string] = ["ab", "pqrs"]
-    const example3: [string, string] = ["abcd", "pq"]
+const example1: [string, string] = ["abc", "pqr"]
+const example2: [string, string] = ["ab", "pqrs"]
+const example3: [string, string] = ["abcd", "pq"]
 
-    const answer = ['apbqcr', 'apbqrs', 'apbqcd']
-
-    it('mergeAlternately', () => {
-        expect(mergeAlternately(...example1)).toBe(answer[0])
-        expect(mergeAlternately(...example2)).toBe(answer[1])
-        expect(mergeAlternately(...example3)).toBe(answer[2])
-    })
-}
+const answer1 = 'apbqcr'
+const answer2 = 'apbqrs'
+const answer3 = 'apbqcd'

@@ -18,20 +18,13 @@ export default function stringCompress(chars: string[]): number {
     return s.length
 };
 
-if (import.meta.vitest) {
-    const { it, expect } = import.meta.vitest
+import.meta.vitest
 
-    const example1 = ["a", "a", "b", "b", "c", "c", "c"]
-    const example2 = ['a']
-    const example3 = ["a", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
+const example1 = ["a", "a", "b", "b", "c", "c", "c"]
+const example2 = ['a']
+const example3 = ["a", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b", "b"]
 
-    const answer1 = 6
-    const answer2 = 1
-    const answer3 = 4
- 
-    it('stringCompress', () => {
-        expect(stringCompress(example1)).toBe(answer1)
-        expect(stringCompress(example2)).toBe(answer2)
-        expect(stringCompress(example3)).toBe(answer3)
-    })
-}
+const answer1 = 6
+const answer2 = 1
+const answer3 = 4
+

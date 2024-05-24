@@ -18,15 +18,10 @@ export default function productExceptSelf(nums: number[]): number[] {
     return nums.map(n => product / n)
 };
 
-if (import.meta.vitest) {
-    const { it, expect } = import.meta.vitest
-    it('productExceptSelf', () => {
-        const example1 = [1, 2, 3, 4]
-        const example2 = [-1, 1, 0, -3, 3]
-        const answer1 = [24, 12, 8, 6]
-        const answer2 = [0, 0, 9, 0, 0]
+import.meta.vitest
 
-        expect(productExceptSelf(example1)).toStrictEqual(answer1)
-        expect(productExceptSelf(example2)).toStrictEqual(answer2)
-    })
-}
+const example1 = [1, 2, 3, 4]
+const example2 = [-1, 1, 0, -3, 3]
+const answer1 = [24, 12, 8, 6]
+const answer2 = [0, 0, 9, 0, 0]
+

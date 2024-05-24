@@ -14,22 +14,16 @@ function gcd(n1: number, n2: number): number {
     return gcd(n2, n1 % n2)
 }
 
-if (import.meta.vitest) {
-    const { it, expect } = import.meta.vitest
+import.meta.vitest
 
-    const example1: [string, string] = ["ABCABC", "ABC"]
-    const example2: [string, string] = ["ABABAB", "ABAB"]
-    const example3: [string, string] = ["LEET", "CODE"]
-    const example4: [string, string] = ["ABCDEF", "ABC"]
-    const example5: [string, string] = ["AA", "A"]
+const example1: [string, string] = ["ABCABC", "ABC"]
+const example2: [string, string] = ["ABABAB", "ABAB"]
+const example3: [string, string] = ["LEET", "CODE"]
+const example4: [string, string] = ["ABCDEF", "ABC"]
+const example5: [string, string] = ["AA", "A"]
 
-    const answer = ['ABC', 'AB', '', '', 'A']
-
-    it('gcdOfStrings', () => {
-        expect(gcdOfStrings(...example1)).toBe(answer[0])
-        expect(gcdOfStrings(...example2)).toBe(answer[1])
-        expect(gcdOfStrings(...example3)).toBe(answer[2])
-        expect(gcdOfStrings(...example4)).toBe(answer[3])
-        expect(gcdOfStrings(...example5)).toBe(answer[4])
-    })
-}
+const answer1 = 'ABC'
+const answer2 = 'AB'
+const answer3 = ''
+const answer4 = ''
+const answer5 = 'A'
