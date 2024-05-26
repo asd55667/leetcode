@@ -11,3 +11,7 @@ Ace Coding Interview with 75 Qs
 7. 238.productExceptSelf
 8. 334.increasingTriplet
 9. 443.stringCompress
+
+---
+
+10. 283.moveZeroes
