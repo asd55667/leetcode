@@ -16,3 +16,4 @@ Ace Coding Interview with 75 Qs
 
 10. 283.moveZeroes
 11. 392.isSubsequence
+12. 11.maxArea
