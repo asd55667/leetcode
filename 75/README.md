@@ -18,3 +18,7 @@ Ace Coding Interview with 75 Qs
 11. 392.isSubsequence
 12. 11.maxArea
 13. 1679.maxOperations
+
+---
+
+14. 643.findMaxAverage
