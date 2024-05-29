@@ -23,3 +23,4 @@ Ace Coding Interview with 75 Qs
 
 14. 643.findMaxAverage
 15. 1456.maxVowels
+16. 1004.longestOnes
