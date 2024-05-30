@@ -1,6 +1,8 @@
-LeetCode 75
+# LeetCode 75
 
 Ace Coding Interview with 75 Qs
+
+## Array/String
 
 1. 1768.Merge Strings Alternately
 2. 1071.gcdOfStrings
@@ -12,16 +14,20 @@ Ace Coding Interview with 75 Qs
 8. 334.increasingTriplet
 9. 443.stringCompress
 
----
+## Two Pointers
 
 10. 283.moveZeroes
 11. 392.isSubsequence
 12. 11.maxArea
 13. 1679.maxOperations
 
----
+## Sliding Window
 
 14. 643.findMaxAverage
 15. 1456.maxVowels
 16. 1004.longestOnes
 17. 1493.longestSubarray
+
+## Prefix Sum
+
+18. 1732.largestAltitude
