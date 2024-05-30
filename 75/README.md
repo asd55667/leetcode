@@ -31,3 +31,4 @@ Ace Coding Interview with 75 Qs
 ## Prefix Sum
 
 18. 1732.largestAltitude
+19. 724.pivotIndex
