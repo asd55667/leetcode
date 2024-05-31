@@ -43,3 +43,4 @@ Ace Coding Interview with 75 Qs
 ## Stack
 
 24. 2390.removeStars
+25. 735.asteroidCollision
