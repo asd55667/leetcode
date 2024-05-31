@@ -39,3 +39,7 @@ Ace Coding Interview with 75 Qs
 21. 1207.uniqueOccurrences
 22. 1657.closeStrings
 23. 2352.equalPairs
+
+## Stack
+
+24. 2390.removeStars
