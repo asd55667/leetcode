@@ -49,3 +49,4 @@ Ace Coding Interview with 75 Qs
 ## Queue
 
 27. 933.RecentCounter
+28. 649.predictPartyVictory
