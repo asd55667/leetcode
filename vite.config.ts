@@ -1,7 +1,8 @@
 // vite.config.ts
 /// <reference types="vitest" />
 import { defineConfig } from 'vite'
-import { parse, type FunctionDeclaration } from 'acorn'
+import { parse, } from 'acorn'
+import type { FunctionDeclaration, ObjectExpression, Property, Identifier } from 'acorn'
 
 export default defineConfig({
     plugins: [
@@ -12,6 +13,7 @@ export default defineConfig({
                 const examples: string[] = []
                 let argc = 1
                 const answers: string[] = []
+                const transform = { input: false, output: false }
                 const ast = parse(code, { ecmaVersion: 'latest', sourceType: 'module' })
 
                 ast.body.forEach(node => {
@@ -29,10 +31,22 @@ export default defineConfig({
                             if (id.type === 'Identifier') {
                                 if (id.name.startsWith('example')) examples.push(id.name)
                                 if (id.name.startsWith('answer')) answers.push(id.name)
+
+                                if (id.name.startsWith('transform')) {
+                                    const props = (node.init as ObjectExpression).properties
+                                    for (const prop of props) {
+                                        const key = ((prop as Property).key as Identifier).name
+                                        if (key === 'input') transform.input = true
+                                        if (key === 'output') transform.output = true
+                                        // if (key === 'handler') transform.handler = true
+                                    }
+                                }
                             }
                         })
                     }
                 })
+                const transformInput = transform.input ? (input) => `transform.input(${input})` : (input) => input
+                const transformOutput = transform.output ? (output) => `transform.output(${output})` : (output) => output
 
                 if (name && examples.length === answers.length) {
                     code += `
@@ -41,7 +55,7 @@ if (import.meta.vitest) {
 
     it('${name}', () => {
         ${examples.map((_, i) =>
-                        `expect(${name}(${argc > 1 ? '...' : ''}${examples[i]})).toStrictEqual(${answers[i]});`
+                        `expect(${name}(${argc > 1 ? '...' : ''}${transformInput(examples[i])})).toStrictEqual(${transformOutput(answers[i])});`
                     ).join('\n')
                         }
     })
