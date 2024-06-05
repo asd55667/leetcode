@@ -50,3 +50,7 @@ Ace Coding Interview with 75 Qs
 
 27. 933.RecentCounter
 28. 649.predictPartyVictory
+
+## Linked List
+
+29. 2095.deleteMiddle
