@@ -39,7 +39,7 @@ export class TreeNode {
     }
 }
 
-export function array2TreeNode(array: number[]): TreeNode | null {
+export function array2TreeNode(array: (number | null)[]): TreeNode | null {
     if (!array.length) return null
 
     const arr = array.map(n => n !== null ? new TreeNode(n) : null)
