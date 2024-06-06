@@ -54,3 +54,4 @@ Ace Coding Interview with 75 Qs
 ## Linked List
 
 29. 2095.deleteMiddle
+30. 328.oddEvenList
