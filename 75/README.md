@@ -55,3 +55,4 @@ Ace Coding Interview with 75 Qs
 
 29. 2095.deleteMiddle
 30. 328.oddEvenList
+31. 206.reverseList
