@@ -61,3 +61,4 @@ Ace Coding Interview with 75 Qs
 ## Binary Tree - DFS
 
 33. 103.maxDepth
+34. 872.leafSimilar
