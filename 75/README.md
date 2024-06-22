@@ -71,3 +71,7 @@ Ace Coding Interview with 75 Qs
 
 39. 199.rightSideView
 40. 1161.maxLevelSum
+
+## Binary Search Tree
+
+41. 700.searchBST
