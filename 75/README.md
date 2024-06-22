@@ -75,3 +75,4 @@ Ace Coding Interview with 75 Qs
 ## Binary Search Tree
 
 41. 700.searchBST
+42. 450.deleteNode
