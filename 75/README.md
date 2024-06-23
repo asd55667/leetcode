@@ -76,3 +76,7 @@ Ace Coding Interview with 75 Qs
 
 41. 700.searchBST
 42. 450.deleteNode
+
+## Graph - DFS
+
+43. 841.canVisitAllRooms
